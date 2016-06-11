@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'tunguska:accounts-imgur',
+  name: 'tunguska:accounts-recurse',
   version: '0.0.1',
-  summary: 'OAuth2 for Imgur',
-  git: 'https://github.com/robfallows/tunguska-accounts-imgur',
+  summary: 'OAuth2 for Recurse',
+  git: 'https://github.com/ih/accounts-rc',
   documentation: 'README.md'
 });
 
@@ -15,9 +15,9 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
 
   api.use('accounts-oauth', ['client', 'server']);
-  api.use('tunguska:imgur@0.0.1', ['client', 'server']);
+  api.use('irvin:recurse@0.0.1', ['client', 'server']);
 
-  api.addFiles('accounts-imgur_login_button.css', 'client');
+  api.addFiles('accounts-rc_login_button.css', 'client');
 
-  api.addFiles('accounts-imgur.js');
+  api.addFiles('accounts-re.js');
 });
